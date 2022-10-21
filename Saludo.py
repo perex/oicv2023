@@ -18,9 +18,10 @@ if k == 0: #no hay que leer nombres
         print("Hola OICV")
 elif k == 1:
     #leer nombres por línea estándar
-    lista = []
+    listaNombres = []
     for x in range(n):
         nombre = input()
-        lista.append(nombre)
-    for x in lista:
+        listaNombres.append(nombre)
+    for x in listaNombres:
+        #Imprimir "Hola " + x ("Nombre Actual de la lista")
         print("Hola "+x)
