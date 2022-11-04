@@ -6,22 +6,33 @@
 
 #ejemplo 4 0
 linea = input()
-#El primer número indica la cantidad de saludos
-n = int(linea[0]) 
-#el segundo indica si hay que leer o no nombres para saludar
-k = int(linea[2])
-#print(n)
-#print(k)
-if k == 0: #no hay que leer nombres
-    #imprimimos tantos Hola OICV como contenga n
-    for x in range(n):
-        print("Hola OICV")
-elif k == 1:
-    #leer nombres por línea estándar
-    listaNombres = []
-    for x in range(n):
-        nombre = input()
-        listaNombres.append(nombre)
-    for x in listaNombres:
-        #Imprimir "Hola " + x ("Nombre Actual de la lista")
-        print("Hola "+x)
+
+try:   
+    
+    #El primer número indica la cantidad de saludos
+    n = int(linea[0]) 
+    #el segundo indica si hay que leer o no nombres para saludar
+    k = int(linea[2])
+    
+    #print(n)
+    #print(k)
+
+    if k == 0: #no hay que leer nombres
+        #imprimimos tantos Hola OICV como contenga n
+        for x in range(n):
+            print("Hola OICV")
+    elif k == 1:
+        #leer nombres por línea estándar
+        listaNombres = []
+        for x in range(n):
+            nombre = input()
+            listaNombres.append(nombre)
+        for x in listaNombres:
+            #Imprimir "Hola " + x ("Nombre Actual de la lista")
+            print("Hola "+x)
+    else:
+        print("Entrada incorrecta")
+except:
+        print("Entrada incorrecta")   
+    
+   
